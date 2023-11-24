@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <style>
+            
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                
+                font-family: 'Inter', sans-serif;
+                text-decoration: none;
+                
+                
+            }
+            nav{
+                background-color: black;
+                
+            }
+            nav{
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10px;
+                margin-bottom: none;
+                transition: all 1000ms ease;
+                
+            }
+            .nav{
+                
+                color: white;
+                transition: all 10000ms ease;
+            }
+            .nav a{
+                color: white;
+                transition: all 10000ms ease;
+            }
+            .search{
+            background-image: url('./images/2485286.png');
+            background-size:contain;
+            background-position: center;
+            width: 30px; /* Set a width for the search icon */
+            height: 30px; /* Set a height for the search icon */
+            cursor: pointer;
+            }
+            .slider::-webkit-scrollbar {
+	        display: none;
+        }
+            
+            .slider-wrapper h1{
+                margin: 100px 50px;
+            }
+            .slider{
+                margin-top: 10px;
+                aspect-ratio: 60/10;
+                display: flex;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                justify-content:space-evenly;
+                gap: 2rem;
+                border-radius: 8px;
+
+            }
+            .slider img{
+                flex: 1  100%;
+            }
+            .header.hide .nav{
+                opacity: 0;
+                transform: scale(0.8);
+                pointer-events: none;
+            }
+            .slider-wrapper.hide{
+                opacity: 0;
+                pointer-events: none;
+            }
+            .slider-nav.hide{
+                opacity: 0;
+                pointer-events: none;
+            }
+            .body.hide{
+                opacity: 0;
+                pointer-events: none;
+            }
+            .searchcontainer{
+                position: relative;
+                background-color: whitesmoke;
+                width: 60%;
+                margin: 50px 450px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+            .searchcontainer.hide{
+                opacity: 0;
+                pointer-events: none;
+            }
+            .searchbar{
+                border: none;
+                background: none;
+            }
+            .searchcontainer .searchbar input{
+                width: 100%;
+                background: transparent;
+                border: 0;
+            }
+            .overlay.show{
+                position: fixed;
+                background: rgba(69, 15, 15, 0.48);
+                width: 100%;
+                height: 100vh;
+                left: 0;
+                top: 0;
+                z-index: 100;
+            }
+
+            .searchplinks{
+                position: absolute;
+                width: 70%;
+                margin-top: 150px;
+                background-color:whitesmoke;
+                color: goldenrod;
+                z-index: 101;
+                border-radius: 20px;
+                padding: 40px;
+            }
+            .searchcontainer .searchbar input:focus {
+             outline: none;
+            }
+
+            .quick-links{
+                display: flex;
+                padding: 20px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border-radius: 10px;
+                margin-bottom: none;
+            }
+                   
+            .quick-links a{
+                padding: 0px;
+                margin-top: 10px;
+                color: black;
+            }
+            .body{
+                margin-top: 100px;
+                display: flex;
+                justify-content:space-evenly;
+            }
+            .industry{
+                
+                color: goldenrod;
+                
+                padding: 50px;
+                border-radius: 10px;
+
+            }
+            .industry:hover{
+                background-color:whitesmoke;
+                transition: background-color 400ms ease;
+            }
+            .body1{
+                
+                margin: 150px 100px;
+                
+            }
+            .Actors{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+            }
+            .Actors a{
+        
+                color: goldenrod;
+                padding: 50px;
+                border-radius: 10px;
+                
+            }
+            .Actors a:hover{
+                background-color: black;
+                transition: background-color 400ms ease;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header class="header ">
+            <nav>
+                <a href="#" class="nav">Hindi</a>
+                <a href="#" class="nav">Telugu</a>
+                <a href="#" class="nav">Tamil</a>
+                <a href="#" class="nav">Malyalam</a>
+                <a href="#" class="nav">Kannada</a>
+                <a href="#" class="search"></a>
+            </nav>
+        </header> 
+
+        <div class="searchcontainer hide">
+            <div class="searchplinks">
+            <div class="searchbar">
+                <form action="">
+                    <input type="text" placeholder="search indian movies">
+                </form>
+            </div>
+        <div class="quick-links">
+            <h1>Quick Links</h1>
+            <a href="#" class="quick">--> Search bollywood</a> 
+            <a href="#" class="quick">--> Search Tollywood</a> 
+            <a href="#" class="quick">--> Search Kollywood</a> 
+            <a href="#" class="quick">--> Search Mollywood</a>
+            <a href="#" class="quick">--> Search Sandalwood</a>  
+            <a href="#" class="close">close</a>
+        </div>
+    </div>
+    </div>
+        <div class="slider-wrapper">
+            <h1>Explore most Anticipated upcoming Indian movies</h1>
+            <div class="slider">
+                <img id="slide-1" src="./images/a79a1106681ff72d5e0fe35e62c00c6f.jpg">;
+                <img id="slide-2" src="./images/Devara_Poster.jpeg">;
+                <img id="slide-3" src="./images/indian2_2022824.jpg">;
+                <img id="slide-4" src="./images/MV5BZmNhMjBhOWUtNGExZC00MWYzLWI5NzItYmYwNTZlNzFlZjAwXkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_.jpg">;
+                <img id="slide-5" src="./images/wallpapersden.com_prabhas-kalki-movie_wxl.jpg">;
+                <img id="slide-6" src="./images/wallpapersden.com_pushpa-the-rise-movie_4096x2048.jpg">;
+
+            </div>
+            
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#https://twitter.com/LycaProductions"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+                <a href="#slide-6"></a>
+            </div>
+        </div>
+        <div class="body">
+                <a href="#" class="industry">Bollywood</a>
+                <a href="#" class="industry">Tollywood</a>
+                <a href="#" class="industry">Kollywood</a>
+                <a href="#" class="industry">Mollywood</a>
+                <a href="#" class="industry">Sandalwood</a>
+        </div>
+        <div class="overlay"></div>
+
+        <div class="body1">
+            <h1>Explore Movies from famous Indian Actors</h1>
+            <div class="Actors">
+            <a href="#" class="stars">Sharukh</a>
+            <a href="#" class="stars">Salman</a>
+            <a href="#" class="stars">Prabhas</a>
+            <a href="#" class="stars">Allu Arjun</a>
+            <a href="#" class="stars">NTR</a>
+            <a href="#" class="stars">Ram Charan</a>
+            <a href="#" class="stars">Vijay</a>
+            <a href="#" class="stars">Rajinikanth</a>
+            <a href="#" class="stars">Kamal Hassan</a>
+            <a href="#" class="stars">Ajith Kumar</a>
+        </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
